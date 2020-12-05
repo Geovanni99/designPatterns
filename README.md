@@ -20,10 +20,7 @@ Repositorio para demostração de Padrões de Design
  </li>
  
   <li> <b>Participantes</b>
-   1.Subject
-   2.Observer
-   3.ConcreteObserverA
-   4.ConcreteObserverB
+   Subject, Observer, ConcreteObserverA, ConcreteObserverB
   </li>
  </ol>
  
@@ -47,9 +44,7 @@ Isso permite salvar e restaurar o estado interno de um originador sem violar seu
  </li>
  
   <li> <b>Participantes</b>
-   Originator
-   CareTaker
-   Memento
+   Originator, CareTaker, Memento
   </li>
  </ol>
  
