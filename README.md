@@ -70,4 +70,27 @@ Isso permite salvar e restaurar o estado interno de um originador sem violar seu
   </li>
  </ol>
  
-  
+   ## State [link](https://github.com/Geovanni99/designPatterns/tree/main/State)
+ 
+  <ol>
+ <li> <b>Objetivo</b> Permite que um objeto altere seu comportamento de acordo com o estado interno que se encontra em um momento dado. 
+ </li>
+ 
+  <li> <b>Motivacao</b>: O padrão State é motivado por aqueles objetos que, em seu estado atual, varia o seu comportamento devido as diferentes mensagens que possa receber. Como exemplo, tomamos uma classe Livro, um objeto desta classe terá respostas diferentes, dependendo do seu estado(Disponível ou Emprestado). Por exemplo invocando o método reservar de um objeto da classe Livro seu comportamento será diferente, se o Livro está no estado Disponível ou no estado Emprestado. 
+ </li>
+ 
+  <li> <b>Aplicabilidade</b>: Se implementa uma classe para cada estado diferente do objeto e o desenvolvimento de cada método para cada estado em particular. O objeto da classe a que pertencem esses estados resolvem os diferentes comportamentos, dependendo de sua condição, com as instâncias das classes de estado. Assim, sempre está presente em um objeto o seu estado atual e se comunica com ele a resolvendo suas responsabilidades.
+
+A idéia principal do padrão State é a introdução de um classe abstrata EstadoLivro que representa os estados e uma interface para todas as classes que representam os próprios estados. Por exemplo, as classes Disponível e Prestado implementam responsabilidades especiais para os estados Disponível e Prestado respectivamente do objeto Livro. A classe Livro mantém uma instância de alguma subclasse de EstadoLivro com o atributo estado que representa o estado actual do Livro. Na implementação dos métodos de Livro haverá chamadas a esses objetos que serão representados pelo atributo estado para a execução das responsabilidades, dependendo de qual estado se encontre em esse momento, enviará essas chamadas para um objeto ou outro das subclasses de EstadoLivro. 
+
+Ele eh recomendado quando um determinado objeto tem estados e responsabilidades diferentes, dependendo de qual estado você está em determinado momento. Também pode ser usada para simplificar os casos em que há código complicado e extenso de decisão que depende do estado do objeto 
+ </li>
+ 
+  <li> <b>Estrutura: </b> <br />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/LibroActualizado.jpg" >
+ </li>
+ 
+  <li> <b>Participantes</b>
+   Contexto, Estado, Subclasse estado concreto
+  </li>
+ </ol>
