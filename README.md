@@ -96,7 +96,7 @@ Ele eh recomendado quando um determinado objeto tem estados e responsabilidades 
  </ol>
 
 2.Padrões Criacionais
-## Factory Method Link
+## Factory Method [link] (https://github.com/Geovanni99/designPatterns/blob/main/Factorymethod)
 <ol>
  <li> <b> Objetivo </b>: Factory Method é um padrão de projeto de software (design pattern, em inglês) que permite às classes delegar para subclasses decidirem, isso é feito através da criação de objetos que chamam o método fabrica especificado numa interface e implementado por um classe filha ou implementado numa classe abstrata e opcionalmente sobrescrito por classes derivadas.
 </li>
