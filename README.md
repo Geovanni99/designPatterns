@@ -39,7 +39,7 @@ Isso permite salvar e restaurar o estado interno de um originador sem violar seu
 
  </li>
  
-  <li> <b>Estrutura: </b>
+  <li> <b>Estrutura: </b> <br />
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg" >
  </li>
  
